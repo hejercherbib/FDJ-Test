@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FDJ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="teams_error_msg">No available data please retry later</string>
+    <string name="no_network_msg">No available Network please enable internet network</string>
+    <string name="leagues_search_hint">Search a league</string>
+
+</resources>
