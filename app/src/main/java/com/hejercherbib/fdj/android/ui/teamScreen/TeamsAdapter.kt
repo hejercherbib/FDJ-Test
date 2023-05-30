@@ -51,10 +51,13 @@ class TeamsAdapter() : ListAdapter<Team, TeamsAdapter.ViewHolder>(DiffCallback()
     // Replace the contents of a view (invoked by the layout manager)
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         val item = getItem(position)
-        Glide.with(viewHolder.img.context)
-            .load(item.strTeamBadge)
+        displayTeamBadge(viewHolder.context,viewHolder.img,item.strTeamBadge)
+    }
+    private fun displayTeamBadge(context : Context,imgView:ImageView, thumbUrl:String ){
+        Glide.with(imgView.context)
+            .load(thumbUrl)
             .placeholder(R.drawable.ic_placeholder_team)
             .error(R.drawable.ic_placeholder_team)
-            .into(viewHolder.img)
+            .into(imgView)
     }
 }
