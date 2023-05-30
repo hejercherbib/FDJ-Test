@@ -1,8 +1,8 @@
 package com.hejercherbib.fdj.android.domain.usecases.league
 
+import com.hejercherbib.fdj.android.data.repositories.LeagueRepository
 import com.hejercherbib.fdj.android.di.IoDispatcher
-import com.hejercherbib.fdj.android.domain.repositories.LeagueRepository
-import com.hejercherbib.fdj.android.model.League
+import com.hejercherbib.fdj.android.domain.models.League
 import com.hejercherbib.fdj.android.utils.FlowUseCase
 import com.hejercherbib.fdj.android.utils.Result
 import kotlinx.coroutines.CoroutineDispatcher

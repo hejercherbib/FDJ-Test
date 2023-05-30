@@ -102,9 +102,9 @@ class TeamsFragment : Fragment() {
                     newText.let {
                         viewModel.uiState.value.leagues?.let {
                             it.forEachIndexed { index, suggestion ->
-                                suggestion.strLeague.let {
-                                    if (suggestion.strLeague.contains(newText, true)) {
-                                        cursor.addRow(arrayOf(index, suggestion.strLeague))
+                                suggestion.name.let {
+                                    if (suggestion.name.contains(newText, true)) {
+                                        cursor.addRow(arrayOf(index, suggestion.name))
                                     }
                                 }
                             }

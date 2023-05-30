@@ -2,8 +2,8 @@ package com.hejercherbib.fdj.android.di
 
 import android.content.Context
 import androidx.room.Room
-import com.hejercherbib.fdj.android.data.database.AppDatabase
-import com.hejercherbib.fdj.android.data.database.LeagueDao
+import com.hejercherbib.fdj.android.data.dataSources.local.AppDatabase
+import com.hejercherbib.fdj.android.data.dataSources.local.LeagueDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

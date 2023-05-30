@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hejercherbib.fdj.android.domain.usecases.league.GetAllLeaguesUseCase
 import com.hejercherbib.fdj.android.domain.usecases.team.GetTeamsByLeagueUseCase
-import com.hejercherbib.fdj.android.model.League
+import com.hejercherbib.fdj.android.domain.models.League
 import com.hejercherbib.fdj.android.model.Team
 import com.hejercherbib.fdj.android.utils.Result
 import dagger.hilt.android.lifecycle.HiltViewModel

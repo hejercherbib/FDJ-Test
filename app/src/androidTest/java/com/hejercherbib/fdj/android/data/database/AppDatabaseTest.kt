@@ -4,7 +4,9 @@ import android.content.Context
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.hejercherbib.fdj.android.model.League
+import com.hejercherbib.fdj.android.data.dataSources.local.AppDatabase
+import com.hejercherbib.fdj.android.data.dataSources.local.LeagueDao
+import com.hejercherbib.fdj.android.data.dataSources.local.entities.LeagueEntity
 import kotlinx.coroutines.runBlocking
 import org.junit.After
 import org.junit.Assert.assertTrue
@@ -37,10 +39,10 @@ class AppDatabaseTest {
     @Test
     @Throws(Exception::class)
     fun writeUserAndReadInList() = runBlocking {
-        val league1 = League("21", "League1", "Foot", "fake")
-        val league2 = League("22", "League2", "Foot", "fake")
-        val league3 = League("23", "League3", "Foot", "fake")
-        val league4 = League("24", "League4", "Foot", "fake")
+        val league1 = LeagueEntity("21", "League1", "Foot", "fake")
+        val league2 = LeagueEntity("22", "League2", "Foot", "fake")
+        val league3 = LeagueEntity("23", "League3", "Foot", "fake")
+        val league4 = LeagueEntity("24", "League4", "Foot", "fake")
         val fakeLeagues = listOf(league1, league2, league3, league4)
 
         leagueDao.insertAll(fakeLeagues)

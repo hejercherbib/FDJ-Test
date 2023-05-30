@@ -5,9 +5,9 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import com.hejercherbib.fdj.android.data.network.AuthenticationInterceptor
-import com.hejercherbib.fdj.android.data.network.LeagueService
-import com.hejercherbib.fdj.android.data.network.TeamService
+import com.hejercherbib.fdj.android.data.dataSources.network.AuthenticationInterceptor
+import com.hejercherbib.fdj.android.data.dataSources.network.LeagueService
+import com.hejercherbib.fdj.android.data.dataSources.network.TeamService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

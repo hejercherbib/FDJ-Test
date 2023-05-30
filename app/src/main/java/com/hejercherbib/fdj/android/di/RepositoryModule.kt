@@ -1,9 +1,9 @@
 package com.hejercherbib.fdj.android.di
 
-import com.hejercherbib.fdj.android.domain.repositories.LeagueRepository
-import com.hejercherbib.fdj.android.domain.repositories.LeagueRepositoryImpl
-import com.hejercherbib.fdj.android.domain.repositories.TeamRepository
-import com.hejercherbib.fdj.android.domain.repositories.TeamRepositoryImpl
+import com.hejercherbib.fdj.android.data.repositories.LeagueRepository
+import com.hejercherbib.fdj.android.data.repositories.LeagueRepositoryImpl
+import com.hejercherbib.fdj.android.data.repositories.TeamRepository
+import com.hejercherbib.fdj.android.data.repositories.TeamRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

@@ -1,4 +1,4 @@
-package com.hejercherbib.fdj.android.data.network
+package com.hejercherbib.fdj.android.data.dataSources.network
 
 import okhttp3.Interceptor
 import okhttp3.Response

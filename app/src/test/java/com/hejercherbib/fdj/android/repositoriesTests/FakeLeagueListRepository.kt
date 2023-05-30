@@ -1,7 +1,7 @@
 package com.hejercherbib.fdj.android.repositoriesTests
 
-import com.hejercherbib.fdj.android.domain.repositories.LeagueRepository
-import com.hejercherbib.fdj.android.model.League
+import com.hejercherbib.fdj.android.data.repositories.LeagueRepository
+import com.hejercherbib.fdj.android.domain.models.League
 import com.hejercherbib.fdj.android.utils.Result
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -15,4 +15,8 @@ class FakeLeagueListRepository : LeagueRepository {
 
     override suspend fun getAllLeagues(): Flow<Result<List<League>>> =
         flow { emit(Result.Success(fakeLeagues)) }
+
+    override suspend fun fetchLeaguesFromRemote(): Flow<Result<List<League>>> {
+        TODO("Not yet implemented")
+    }
 }

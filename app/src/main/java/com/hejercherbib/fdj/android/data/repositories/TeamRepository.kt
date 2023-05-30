@@ -1,9 +1,10 @@
-package com.hejercherbib.fdj.android.domain.repositories
+package com.hejercherbib.fdj.android.data.repositories
 
-import com.hejercherbib.fdj.android.data.network.TeamService
+import com.hejercherbib.fdj.android.data.dataSources.network.TeamService
 import com.hejercherbib.fdj.android.di.IoDispatcher
 import com.hejercherbib.fdj.android.utils.Result
 import com.hejercherbib.fdj.android.model.Team
+import com.hejercherbib.fdj.android.model.mapToModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
@@ -28,7 +29,7 @@ class TeamRepositoryImpl @Inject constructor(
 
             val response = remoteService.searchAllTeams(leagueName)
             if (response.isSuccessful) {
-                emit(Result.Success(response.body()?.teams))
+                emit(Result.Success(response.body()?.teams?.map { return@map it.mapToModel() }))
             } else {
                 val errorMessage = response.errorBody()?.string()
                 response.errorBody()?.close()

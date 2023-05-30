@@ -1,14 +1,11 @@
-package com.hejercherbib.fdj.android.model
+package com.hejercherbib.fdj.android.domain.models
 
-import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-//Todo add Serlization to change name attribute
-@Entity
 data class League(
     @PrimaryKey
-    val idLeague: String,
-    val strLeague: String,
-    val strSport: String,
-    val strLeagueAlternate: String?
+    val id: String,
+    val name: String,
+    val sport: String,
+    val alternate: String?
 )

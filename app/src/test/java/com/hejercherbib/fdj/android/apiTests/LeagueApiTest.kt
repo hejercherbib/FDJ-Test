@@ -1,14 +1,5 @@
 package com.hejercherbib.fdj.android.apiTests
 
-import com.hejercherbib.fdj.android.data.network.LeagueService
-import com.hejercherbib.fdj.android.di.NetworkModule
-import junit.framework.Assert
-import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.runBlocking
-import okhttp3.OkHttpClient
-import okhttp3.mockwebserver.MockResponse
-import okhttp3.mockwebserver.MockWebServer
-import org.junit.After
 import org.junit.Test
 /*
 internal fun MockWebServer.enqueueFile(fileName: String, code: Int) {

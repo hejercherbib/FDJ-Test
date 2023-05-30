@@ -1,7 +1,7 @@
 package com.hejercherbib.fdj.android.domain.usecases.team
 
+import com.hejercherbib.fdj.android.data.repositories.TeamRepository
 import com.hejercherbib.fdj.android.di.IoDispatcher
-import com.hejercherbib.fdj.android.domain.repositories.TeamRepository
 import com.hejercherbib.fdj.android.model.Team
 import com.hejercherbib.fdj.android.utils.FlowUseCase
 import com.hejercherbib.fdj.android.utils.Result

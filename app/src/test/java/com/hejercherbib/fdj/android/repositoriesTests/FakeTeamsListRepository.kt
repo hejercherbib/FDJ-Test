@@ -1,6 +1,6 @@
 package com.hejercherbib.fdj.android.repositoriesTests
 
-import com.hejercherbib.fdj.android.domain.repositories.TeamRepository
+import com.hejercherbib.fdj.android.data.repositories.TeamRepository
 import com.hejercherbib.fdj.android.model.Team
 import com.hejercherbib.fdj.android.utils.Result
 import kotlinx.coroutines.flow.Flow
