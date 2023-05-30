@@ -46,7 +46,7 @@ class TeamsFragment : Fragment() {
 
     @OptIn(ExperimentalCoroutinesApi::class, FlowPreview::class)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        // todo check if network available then fetch data else show network error msg
+        // todo check if network available then fetch data else show network error msg and add listener for connectivity
         fillViews()
         setSearchQuery()
         observeUiStates()

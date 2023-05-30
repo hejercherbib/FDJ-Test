@@ -86,7 +86,9 @@ class TeamsViewModel @Inject constructor(
                     is Result.Success -> when {
                         result.data.isNullOrEmpty() -> _uiState.update { state ->
                             state.copy(
-                                isLoading = false
+                                isLoading = false,
+                                teams = emptyList(),
+                                isError = false
                             )
                         }
 
@@ -94,7 +96,9 @@ class TeamsViewModel @Inject constructor(
                             _uiState.update { state ->
                                 state.copy(
                                     isLoading = false,
-                                    teams = keepOneOfTwoData(result.data)
+                                    teams = keepOneOfTwoData(result.data) ,
+                                    isError = false
+
                                 )
                             }
                         }
@@ -103,6 +107,7 @@ class TeamsViewModel @Inject constructor(
                     is Result.Error -> _uiState.update { currentState ->
                         currentState.copy(
                             isLoading = false,
+                            teams = emptyList(),
                             isError = true
                         )
                     }
